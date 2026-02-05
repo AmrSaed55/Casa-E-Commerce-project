@@ -553,6 +553,110 @@ footer .copyright {
   font-size: 40px;
   color: #088178;
 }
+/* Shop Page */
+#page-header {
+  background-image: url("../assets/images/banner/b1.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+  color: #fff;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* singleProduct Page */
+#productDetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+#productDetails .single-pro-img {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+#productDetails .single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#productDetails .single-pro-details h6 {
+  font-size: 16px;
+}
+
+#productDetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+  font-size: 30px;
+}
+
+#productDetails .single-pro-details h2 {
+  font-size: 34px;
+}
+
+#productDetails .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#productDetails .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#productDetails .single-pro-details input:focus {
+  outline: none;
+}
+
+#productDetails .single-pro-details span {
+  line-height: 25px;
+}
+
+#productDetails .single-pro-details button {
+  background-color: #088178;
+  color: #fff;
+  padding: 15px 40px;
+}
 
 /* Start Media Query */
 
@@ -805,5 +909,21 @@ footer .copyright {
 
   footer .copyright {
     text-align: start;
+  }
+
+  /* singleProduct page */
+
+  #productDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #productDetails .single-pro-img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #productDetails .single-pro-details {
+    width: 100%;
   }
 }
